@@ -33,7 +33,7 @@ public class TrackManager : MonoBehaviour
 
     private void Update()
     {
-        // Check if the player has moved far enough forward to need a new track
+        // Check if the player has moved far enough to need a new track
         if (_playerTransform.position.z - safeZone > (spawnZ - _numberOfTracks * _trackLength))
         {
             SpawnTrack(Random.Range(1, _trackPrefabs.Length));

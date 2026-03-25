@@ -118,8 +118,6 @@ public class FirstPersonRunner : MonoBehaviour
                 if (swipeDelta.y > 0)
                     Jump(); 
                 
-                // Note: If you want to add a "Roll/Duck" mechanic later, 
-                // you would check `else if (swipeDelta.y < 0)` right here!
                 else if(swipeDelta.y < 0)
                 {
                     Roll();
